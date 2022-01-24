@@ -481,13 +481,13 @@ export default class Trimmer extends React.Component {
     );
   }
 }
-
+const DEFALUT_HEIGHT = 100
 const styles = StyleSheet.create({
   root: {
-    height: 140,
+    height: DEFALUT_HEIGHT,
   },
   horizontalScrollView: {
-    height: 140,
+    height: DEFALUT_HEIGHT,
     overflow: 'hidden',
     position: 'relative',
   },
@@ -498,7 +498,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     borderWidth: 1,
     borderColor: TRACK_BORDER_COLOR,
-    height: 100,
+    height: DEFALUT_HEIGHT*5/7,
     marginHorizontal: HANDLE_WIDTHS + TRACK_PADDING_OFFSET,
   },
   trimmer: {
@@ -507,12 +507,12 @@ const styles = StyleSheet.create({
     top: 17,
     borderColor: TINT_COLOR,
     borderWidth: 3,
-    height: 106,
+    height: DEFALUT_HEIGHT*5/7 + 6,
   },
   handle: {
     position: 'absolute',
     width: HANDLE_WIDTHS,
-    height: 106,
+    height: DEFALUT_HEIGHT*5/7 + 6,
     backgroundColor: TINT_COLOR,
     top: 17,
   },
@@ -566,7 +566,7 @@ const styles = StyleSheet.create({
   },
   scrubberTail: {
     backgroundColor: SCRUBBER_COLOR,
-    height: 123,
+    height: DEFALUT_HEIGHT*13/14,
     width: 3,
     borderBottomLeftRadius: 3,
     borderBottomRightRadius: 3,
